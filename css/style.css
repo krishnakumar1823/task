@@ -1,0 +1,224 @@
+/*universal selector*/
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+}
+body{
+	background: url('../image/back.jpg');
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size:cover;
+}
+
+/*setting margin width as 90%*/
+.container{
+	width:90%;
+	margin:0 auto;
+}
+/*class selector*/
+.clsel{
+	color:blue;
+	margin:10px 0px 20px 25px;
+ }
+h1{
+	text-align:center;
+}
+details > ol{
+	margin:0% 0% 0% 8%;
+	background-color: powderblue;
+	padding: 4px;
+	order:1px solid blue;
+	border-radius:15px;
+	background-color:#DFFAFF;
+	color:red;
+	width:18%;
+	
+}
+/*name-element selector*/
+ h4{
+	margin:10px 0px 20px 25px;
+	font-size:20px;
+	color:green;
+ }
+ hr{
+	border-color:blue;
+ }
+#simple:hover{
+	border:1px solid blue;
+	border-radius:15px;
+	background-color:#DFFAFF;
+	color:red;
+	font-size:20px;
+}
+#combinator:hover{
+	border:1px solid blue;
+	border-radius:15px;
+	background-color:#DFFAFF;
+	color:red;
+	font-size:20px;
+}
+
+/*id selector*/
+#idsel{
+	color:blue;
+	margin:10px 0px 20px 25px;
+ }
+/*descendant selector*/
+#desc p{
+	color:blue;
+	margin:10px 0px 0px 25px;
+}
+#child > p{
+	color:blue;
+	margin:10px 0px 0px 25px;
+}
+#adj + p{
+	color:blue;
+	margin:10px 0px 0px 25px;
+}
+#gen~h6{
+	color:blue;
+	margin:10px 0px 0px 25px;
+	font-size:20px;
+}
+#Pseudo-class:hover{
+	border:1px solid blue;
+	border-radius:15px;
+	background-color:#DFFAFF;
+	color:red;
+	font-size:20px;
+}
+a:link,{
+	margin:10px 0px 0px 25px;
+	color:green;
+	background-color: green;
+}
+a:hover{
+	margin:10px 0px 0px 25px;
+	color:pink;
+	background-color: pink;
+}
+a:active{
+	margin:10px 0px 0px 25px;
+	color:yellow;
+	background: yellow;
+}
+a:visited{
+	margin:10px 0px 0px 25px;
+	color:red;
+	background: white;
+}
+input:checked{
+	margin:0px 0px 0px 45px;
+	height:50px;
+	width:50px;
+}
+input[type=text]:disabled{
+	background:red;
+}
+#empty:empty{
+	width:100px;
+	height:20px;
+	background:red;
+}
+input[type=email]:enabled{
+	background:#83F761;
+}
+#first-child p:first-child{
+	background-color:grey;
+	width:190px;
+}
+#first-of-type p:first-of-type{
+	background-color:white;
+	width:190px;
+}
+#input-focus input[type=text]:focus{
+	background-color:blue;
+	width:190px;
+}
+#input-in-range input[type=number]:in-range{
+	border:3px solid blue;
+}
+#input-invalid input[type=number]:invalid{
+	border:3px solid red;
+}
+p:lang(it){
+	background:yellow;
+	width:190px;
+}
+#last-child p:last-child{
+	background-color:red;
+	width:190px;
+	color:black;
+}
+#last-of-type p:last-of-type{
+	background-color:white;
+	width:190px;
+}
+#not-p :not(p){
+	color:blue;
+}
+#nth-child li:nth-child(1){
+	background-color:lightgreen;
+}
+#nth-last-child li:nth-last-child(3){
+	background-color:lightgreen;
+}
+#nth-last-of-type li:nth-last-of-type(3){
+	background-color:lightgreen;
+}
+#only p:only-of-type{
+	background:red;
+	color:black;
+}
+#only-child p:only-child{
+	background:red;
+	color:black;
+}
+#input-out-of-range input:out-of-range{
+	border:3px solid red;
+}
+#read-only input:read-only{
+	background:yellow;
+}
+#read-write input:read-write{
+	background:yellow;
+}
+#required input:required{
+	background-color:yellow;
+}
+#target :target{
+	border:1px solid grey;
+	background-color:grey;
+}
+#input-valid input:valid{
+	background-color:lightgreen;
+}
+#Pseudo-element:hover{
+	border:1px solid blue;
+	border-radius:15px;
+	background-color:#DFFAFF;
+	color:red;
+	font-size:20px;
+}
+#after ::after{
+	content: "  fabevy";
+}
+#before ::before{
+	content: "fabevy  ";
+}
+#first-letter p::first-letter{
+	font-size:30px;
+	color:blue;
+}
+#first-line address::first-line{
+	background-color:lightgreen;
+}
+#marker ::marker{
+	color:green;
+}
+#selection ::selection{
+	background-color:black;
+	color:red;
+}

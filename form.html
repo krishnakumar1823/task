@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>form</title>
+<style>
+fieldset{
+background-image: url('image/bird.gif'), url('image/bird.gif');
+background-position: right bottom, left top;
+padding:60px;
+background-repeat:no-repeat;
+background-size: 30% 8%;
+border:6px solid powderblue;
+border-radius:22px;
+margin:40px;
+background-position:top-right;
+background-color:#7AFCC1;
+}
+legend{
+text-align:right;
+font-size:30px;
+}
+h1{
+color:#189B5F;
+}
+#submit{
+background-color:white;
+color:black;
+padding:12px;
+border-radius:16px;
+}
+#submit:hover{
+background-color:#7AFCC1;
+border:3px solid blue;
+font-size:20px;
+color:white;
+}
+#a1 a{
+	border:1px solid red;
+	background-color:none;
+	border-radius:20px;
+	color;white;
+	margin-left:48%;
+	margin-top:5%;
+	display:inline-block;
+	width:8%; 
+}
+#a1 a:hover{
+	border-color:green;
+	background-color:lightgreen;
+	color:white;
+	display:inline-block;
+}
+</style>
+</head>
+<body>
+	<div id="a1">
+		<a href="index.html">click to go back</a>
+	</div>
+<center>
+   <form>
+   <fieldset><!-- it create a table -->
+    <legend style="color:red;">26th april</legend>
+   	 <!-- input type= text is using -->
+     <label for="fname">Name:</label>
+	 <input type="text" id="fname" placeholder="ENTER YOUR NAME" required><br><!-- required unpaired attribute used to display errors if we forgot to fill input text -->
+	 <br>
+	 <!-- input type=mail is using  -->
+	 <label for="mail">mail:</label>
+	 <input type="email" id="mail" placeholder="ENTER YOUR MAIL" required><br><!-- required used -->
+	 <br>
+	 
+	 <!-- input type=password is using  -->
+	 <label for="pass">password:</label>
+	 <input type="password" id="pass" placeholder="ENTER YOUR PASSWORD" required><br><!-- required used -->
+	 <br>
+	
+	<h1>CHECKBOX</h1>
+	<!-- input type=checkbox is using -->
+	 <label for="venila">venila</label>
+	 <input type="checkbox" id="venila"><br>
+	 <label for="arcream">arun icecream</label>
+	 <input type="checkbox" id="arcream"><br>
+	 <label for="amcream">amul icecream</label>
+	 <input type="checkbox" id="amcream" checked><!-- checked is a unpaired attribute it always display automatically --> <br>
+     <br>
+	 
+	 <h1>RADIO</h1>
+	 <!-- input type=radio is using -->
+	 <label for="male">male</label>
+	 <input type="radio" id="male" name="radio"><br>
+	 <label for="female">female</label>
+	 <input type="radio" id="female" name="radio"><br>
+	 
+	 <hr style="width:500px;">
+	 <h1>SELECT DEFAULT</h1>
+	 <!-- select tag is used for selecting a particular data in a option -->
+	 <label for="colour">colours</label>
+	 <select id="colour"><!-- we can use [size='3' and multipte] unpaired attribute -->
+		 <optgroup label="colour">
+			 <option value="blue">blue</option>
+			 <option value="green">green</option>
+		 </optgroup>
+		 <optgroup label="favourite">
+			 <option value="red">red</option>
+			 <option value="pink">pink</option>
+		 <option value="orange">orange</option>
+		 </optgroup>
+	 </select>
+	 </br>
+	 
+	 <h1>SELECT DEFAULT CHANGED</h1>
+	 <!-- select tag is used for selecting a particular data in a option -->
+	 <label for="colour">colours</label>
+	 <select id="colour"><!-- we can use [size='3' and multipte] unpaired attribute -->
+		 <optgroup label="colour">
+			 <option value="blue" >blue</option>
+			 <option value="green"selected>green</option><!-- selected=this unpaired element helps to change the default so in browser it is didplay green colour first -->
+		 </optgroup>
+		 <optgroup label="favourite">
+			 <option value="red">red</option>
+			 <option value="pink">pink</option>
+		 <option value="orange">orange</option>
+		 </optgroup>
+	 </select>
+	 </br>
+	 
+	 <h1>SELECT ID SIZE CHANGED</h1>
+	 <!-- select tag is used for selecting a particular data in a option -->
+	 <label for="colour">colours</label>
+	 <select id="colour" size="3"><!-- we can use [size='3' and multipte] unpaired attribute -->
+		 <optgroup label="colour">
+			 <option value="blue" >blue</option>
+			 <option value="green"selected>green</option><!-- selected=this unpaired element helps to change the default so in browser it is didplay green colour first -->
+		 </optgroup>
+		 <optgroup label="favourite">
+			 <option value="red">red</option>
+			 <option value="pink">pink</option>
+		 <option value="orange">orange</option>
+		 </optgroup>
+	 </select>
+	 </br>
+	 
+	 
+	 <h1>SELECT UNPAIRED ATTRIBUTE CHANGED</h1>
+	 <!-- select tag is used for selecting a particular data in a option -->
+	 <label for="colour">colours</label>
+	 <select id="colour" multiple><!-- we can use [size='3' and multipte] unpaired attribute -->
+		 <optgroup label="colour">
+			 <option value="blue" >blue</option>
+			 <option value="green"selected>green</option><!-- selected=this unpaired element helps to change the default so in browser it is didplay green colour first -->
+		 </optgroup>
+		 <optgroup label="favourite">
+			 <option value="red">red</option>
+			 <option value="pink">pink</option>
+		 <option value="orange">orange</option>
+		 </optgroup>
+	 </select>
+	 </br>
+
+	 <hr style="width:500px;">
+	 <h1>DATALIST</h1>
+	 <!-- datalist tag is similar to list -->
+	 <input list="num">
+		 <datalist id="num">
+		 <option value="1">
+		 <option value="2">  
+		 <option value="3"> 
+		 <option value="4">  
+		 <option value="5"> 
+	 </datalist><br><br><br>
+	 
+	 <!-- textarea tag is used to give feedback -->
+	 <textarea name="meassage" rows="10" cols="30" placeholder="this is fedback text box"></textarea>
+	 <br>
+	 <br>
+	 
+	 <!--input=button -->
+	 <h1>button onclick</h1>
+	 <input type="button" onclick="alert('hi')" value="click me!" id="submit">
+	 <br>
+	 
+	 <!-- color=type -->
+	 <h1>color tag</h1>
+	 <label for="favcolor">my favourite color</label>
+	 <input type="color" id="favcolor" name="favcolor" value="blue">
+	 <br>
+	 
+	 <!-- date -->
+	 <br>
+	 <h1>date</h1>
+	 <label for="date">select date</label>
+	 <input type="date" id="date" name="DATE">
+	 
+	 <!--datetime-local -->
+	 <h1>date and time</h1>
+	 <label for="dat"></label>
+	 <input type="datetime-local" id="dat" name="dateandtime">
+	 
+	 <!--image -->
+	 <h1>image</h1>
+	 <input type="image" src="..\pic\bird.jpg" width="50" height="50">
+	 
+	 <!-- file -->
+	 <h1>file</h1>
+	 <label for="mfile"></label>
+	 <input type="file" id="mfile" name="file">
+	 
+	 <!--month -->
+	 <h1>month</h1>
+	 <label for="month"></label>
+	 <input type="month" id="mth" name="Month">
+	 
+	 <!--range -->
+	 <h1>range</h1>
+	 <label for="rge"></label>
+	 <input type="range" id="rge" name="Range" min="0" max="10">
+	 
+	 <!--search-->
+	 <h1>search</h1>
+	 <label for="srch"></label>
+	 <input type="search" id="srch" name="Search">
+	 
+	 <!--tel-->
+	 <h1>telephone number</h1>
+	 <label for="phn"></label>
+	 <input type="tel" id="phn" maxlength="10" name="phnumber" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"}
+	 
+	 <!-- time -->
+	 <h1>time</h1>
+	 <label for="tym"></label>
+	 <input type="time" id="tym" name="Time">
+	 
+	 <!--url-->
+	 <h1>url</h1>
+	 <label for="link"></label>
+	 <input type="url" id="link" name="URL">
+	 
+	 <!--week-->
+	 <h1>week</h1>
+	 <label for="wek"></label>
+	 <input type="week" id="wek" name="Week">
+	 
+	 
+	 <!-- button -->
+	 <br>
+	 <input type="button" value="submit" id="submit"> 
+	 <input type="button" value="reset" id="submit"> 
+	 
+	</fieldset>
+  </form>
+</center>
+</body>
+</html> 

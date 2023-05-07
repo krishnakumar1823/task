@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>selectors</title>
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width,Initial-scale=1.0">
+<style>
+#a1 a{
+	border:1px solid red;
+	background-color:none;
+	border-radius:20px;
+	color;white;
+	margin-left:48%;
+	margin-top:5%;
+	display:inline-block;
+	width:8%; 
+}
+#a1 a:hover{
+	border-color:green;
+	background-color:lightgreen;
+	color:white;
+	display:inline-block;
+}
+</style>
+</head>
+<body>
+	<section class="container">
+	     <h1>Selectors</h1>
+			<hr style="display:block; margin:auto" width="500">
+			<!--selector types-->
+			<div id="a1">
+				<a href="index.html">click to go back</a>
+			</div>
+			<details>
+			<summary>types of selector</summary>
+			<ol>
+				<li>Simple selector</li>
+				<li>Combinator selector</li>
+				<li>Pseudo-class selector</li>
+				<li>Pseudo-elements selector</li>
+				<li>Attribute selector</li></p>
+			</ol>
+			</details>
+			<br>
+			<hr>
+			<br>
+			<!--simplle selector-->
+			<div id="simple">
+			<h2>Simple selector</h2>
+				<br>
+				<li>universal selector</li>
+					<!--*{} in stylesheet is unniversal selector-->
+				<li>id selector</li>
+					<p id="idsel">this is the example for id selector</p>
+				<li>class selector</li>
+					<p class="clsel">this is the example for class selector</p>
+				<li>name-elements selector</li>
+					<h4>google</h4>
+			</div>
+			<br>
+			<hr>
+			<br>
+			<!--Combinator selector-->
+			<div id="combinator">
+			<h2>Combinator selector</h2>
+				<br>
+				<li>descendant selector (space)</li>
+					<div id="desc">
+						<p>hi this is descendant</p><br>
+						<p>this is another example of p tag</p>
+					</div>
+				<li>child selector (>)</li><br>
+					<div id="child">
+						<p>hi this is child selector</p><br>
+						<p>example for child</p>
+					</div><br>
+				<li>adjacent sibling selector (+)</li><br>
+					<div id="adj">
+						<p>hi this is adjacent sibling selector</p><br>
+					</div>
+						<p>takes the first one after the div this is adjacent</p>
+						<p>example 1 for adjacent</p>
+				<br>
+				<li>general sibling selector (~)</li><br>
+					<div id="gen">
+						<h6>hi this is general sibling selector</h6>
+					</div>
+					<h6>example for general sibling</h6>
+					<h6>takes the whole text after the div</h6>
+			</div>
+			<br>
+			<hr>
+			<br>
+			<div id="Pseudo-class">
+			<h2>Pseudo-class selector</h2>
+			<br>
+				<li>a:link,a:visited,a:hover,a:active</li>
+					<a href="http://www.youtube.com">click to open youtube</a>
+				<br><br>
+			<form>
+				<li>input:checked</li>
+				<input type="checkbox" name="vennila" checked>i love ice cream
+			<br><br>
+				<li>input:disabled</li>
+			 		name:<br><br><input type="text" value="krishna"><br>
+					Age:<br><br><input type="number" value="23"><br>
+					Qualification:<br><br><input type="text" value="B.E CSE" disabled><br>
+			<br><br>
+				<li>empty:empty</li>
+				<p id="empty"></p>
+			<br><br>
+				<li>input:enabled</li>
+					name:<br><br><input type="email" value="kumarkrishna@gmail.com"><br>
+			<br>
+				<li>first-child</li>
+				<div id="first-child">
+					<p>hi am krishna<p>
+					<p>am from pavoorchathram</p>
+					<p>now am studying in fabevy institute</p>
+				</div>
+			<br>
+				<li>first-of-type</li>
+				<div id="first-of-type">
+					<p>this is first-of-type</p>
+					<p>background applied in the first para only</p>
+					<p>see the changes</p>
+				</div>
+			<br>
+				<li>input:focus</li>
+				<div id="input-focus">
+					<input type="text" placeholder="name">
+				</div>
+			<br>
+				<li>input:in-range</li>
+				<div id="input-in-range">
+					<input type="number" placeholder="number">
+				</div>
+			<br>
+				<li>input:invalid</li>
+				<div id="input-invalid">
+					<input type="number" max="10" placeholder="number">
+				</div>
+			<br>
+				<li>lang(it)</li>
+					<p lang="it">krishna</p>
+			<br>
+				<li>last-child</li>
+				<div id="last-child">
+					<p>this is last-child</p>
+					<p>only last para is marked as red</p>
+					<p>see the output</p>
+				</div>
+			<br>
+				<li>last-of-type</li>
+				<div id="last-of-type">
+					<p>this is last-of-type</p>
+					<p>background applied in the last para only</p>
+					<p>see the changes</p>
+				</div>
+			<br>
+				<li>not(p)</li>
+				<div id="not-p">
+					<h5>this is not(p) example</h5>
+					<p>only p tag has no colour</p>
+					<p>this is also p tag</p>
+					<h5>h5 tag</h5>
+				</div>
+			<br>
+				<li>nth-child(odd or even or number)</li>
+				<div id="nth-child">
+				<ol>
+					<li>krishna</li>
+					<li>23</li>
+					<li>b.e cse</li>
+					<li>pavoorchathram</li>
+				<ol>
+				</div>
+			<br>
+				<li>nth-last-child(odd or even or number)</li>
+				<div id="nth-last-child">
+				<ol>
+					<li>krishna</li>
+					<li>23</li>
+					<li>b.e cse</li>
+					<li>pavoorchathram</li>
+				<ol>
+				</div>
+			<br>
+				<li>nth-last-of-type(odd or even or number)</li>
+				<div id="nth-last-of-type">
+				<ol>
+					<li>krishna</li>
+					<li>23</li>
+					<li>b.e cse</li>
+					<li>pavoorchathram</li>
+				<ol>
+				</div>
+			<br>
+				<li>only-of-type</li>
+				<div id="only">
+		 			<div><p>krishna</p></div>
+					<div><p>23</p>
+					<p>b.e cse</p>
+					<p>pavoorchathram</p></div>
+				</div>
+			<br>
+				<li>only-child</li>
+				<div id="only-child">
+		 			<div><p>krishna</p></div>
+					<div><p>23</p>
+					<p>b.e cse</p>
+					<p>pavoorchathram</p></div>
+				</div>
+			<br>
+				<li>input:out-of-range</li>
+				<div id="input-out-of-range">
+					<input type="number" min="0" max="10" placeholder="number">
+				</div>
+			<br>
+				<li>input:read-only</li>
+				<div id="read-only">
+					<input readonly value="hello">
+				</div>
+			<br>
+				<li>input:read-write</li>
+				<div id="read-write">
+					<input value="hello">
+				</div>
+			<br>
+				<li>input:required</li>
+				<div id="required">
+					<input type="text" required>
+				</div>
+			<br>
+				<li>:root</li>
+				<li> this is used to make background-color for the whole document</li>
+			<br>
+				<li>:target</li>
+				<div id="target">
+					<a href="#content1">click to see the 1st content</a>|
+					<a href="#content2">click to see the 2st content</a><br>
+					<p>see the content</p><br>
+					<p id="content1"> this is 1st content</p><br>
+					<p id="content2"> this is 2st content</p>
+				</div>
+			<br>
+				<li>input:valid</li>
+				<div id="input-valid">
+					<input type="email" value="hjg@email.com">
+				</div>
+			</form>
+			</div>
+		<br>
+		<hr>
+		<br>
+			<div id="Pseudo-element">
+			<h2>Pseudo Elements</h2>
+			<br>
+				<li>::after</li>
+				<div id="after">
+					<p>hi</p>				
+				</div>
+			<br>
+				<li>::before</li>
+				<div id="before">
+					<p>hi</p>				
+				</div>
+			<br>
+				<li>::first-letter</li>
+				<div id="first-letter">
+					<p>hi</p>				
+				</div>
+			<br>
+				<li>::first-line</li>
+				<div id="first-line">
+					<address>
+						R.krishna kumar<br>
+						10/277m,jebamani nadar street<br>
+						pavoorchathram			
+					</address>				
+				</div>
+			<br>
+				<li>::marker</li>
+				<div id="marker">
+					<ol>
+						<li>tea</li>
+						<li>coffee</li>
+						<li>milk</li>
+					</ol>				
+				</div>
+			<br>
+				<li>::selection</li>
+				<div id="selection">
+					<address>
+						R.krishna kumar<br>
+						10/277m,jebamani nadar street<br>
+						pavoorchathram			
+					</address>				
+				</div>
+	</section>
+	
+</body>
+</html>

@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>background</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<style>
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+.container{
+	width:90%;
+	margin:auto;
+}
+.sec1 h1{
+	margin:auto 40%;
+}
+#li1{
+	position:relative;
+	border:1px solid red;
+	width:16%;
+	margin:auto 43%;
+}
+#li1 li::marker{
+	color:red;
+}
+#li2 li{
+	padding:10px;
+	margin-bottom:10px;
+}
+#li2 li::marker{
+	color:red;
+}
+#li3{
+	display:flex;
+}
+#li3 li{
+	padding:10px;
+	margin-bottom:10px;
+	margin-right:10%;
+}
+#li3 li::marker{
+	color:red;
+}
+#back1{
+	background-image:url('image/assasin2.jpg');
+	border:1px solid black;
+	padding:40%;
+	height:250px;
+	width:auto;
+}
+#back2{
+	background-image:none;
+	border:1px solid black;
+	padding:40%;
+	height:250px;
+	width:auto;
+}
+#back3{
+	background-image:conic-gradient(blue,green,white);
+	border:1px solid black;
+	padding:40%;
+	height:250px;
+	width:250px;
+}
+#back4{
+	background-image:linear-gradient(blue,green,white);
+	border:1px solid black;
+	padding:40%;
+	height:250px;
+	width:250px;
+}
+#back5{
+	background-image:radial-gradient(blue,green,white);
+	border:1px solid black;
+	padding:40%;
+	height:250px;
+	width:250px;
+	display:inline-block;
+}
+#back6{
+	background-image:repeating-conic-gradient(blue,green,white);
+	border:1px solid black;
+	padding:40%;
+	height:250px;
+	width:250px;
+}
+#back7{
+	background-image:repeating-linear-gradient(blue,green,white);
+	border:1px solid black;
+	padding:40%;
+	height:250px;
+	width:250px;
+}
+#back8{
+	background-image:repeating-radial-gradient(blue,green,white);
+	border:1px solid black;
+	padding:40%;
+	height:250px;
+	width:250px;
+}
+#li4 li{
+	padding:10px;
+	margin-bottom:10px;
+	margin-right:10%;
+}
+#li4 li::marker{
+	color:red;
+}
+#org1{
+	border:1px solid black;
+	background-image:url('image/assasin1.jpg');
+	background-repeat:no-repeat;
+	backround-origin: padding-box;
+	height:250px;
+	background-color:powderblue;
+}
+#org2{
+	border:1px solid black;
+	background-image:url('image/assasin1.jpg');
+	background-repeat:no-repeat;
+	backround-origin: border-box;
+	height:250px;
+	background-color:powderblue;
+}
+#org3{
+	border:1px solid black;
+	background-image:url('image/assasin1.jpg');
+	background-repeat:no-repeat;
+	backround-origin: content-box;
+	height:250px;
+	background-color:powderblue;
+}
+#li5 li{
+	padding:10px;
+	margin-bottom:10px;
+	margin-right:10%;
+}
+#li5 li::marker{
+	color:red;
+}
+#rep1{
+	background-image:url('image/assasin.jpg');
+	background-repeat:repeat;
+	height:250px;
+	width:auto;
+	background-color:powderblue;
+}
+#rep2{
+	background-image:url('image/assasin.jpg');
+	background-repeat:no-repeat;
+	height:250px;
+	width:auto;
+	background-color:powderblue;
+}
+#rep3{
+	background-image:url('image/assasin.jpg');
+	background-repeat:repeat-x;
+	height:250px;
+	width:auto;
+	background-color:powderblue;
+}
+#rep4{
+	background-image:url('image/assasin.jpg');
+	background-repeat:repeat-y;
+	height:550px;
+	width:auto;
+	background-color:powderblue;
+}
+#rep5{
+	background-image:url('image/assasin.jpg');
+	background-repeat:space;
+	height:250px;
+	width:auto;
+	background-color:powderblue;
+}
+#rep6{
+	background-image:url('image/assasin.jpg');
+	background-repeat:round;
+	height:250px;
+	width:auto;
+	background-color:powderblue;
+}
+#li6 li{
+	padding:10px;
+	margin-bottom:10px;
+	margin-right:10%;
+}
+#li6 li::marker{
+	color:red;
+}
+#att1,#att2,#att3{
+	border:1px solid black;
+	height:100px;
+	width:auto;
+	background-color:powderblue;
+} 
+#li7 li{
+	padding:10px;
+	margin-bottom:10px;
+	margin-right:10%;
+}
+#li7 li::marker{
+	color:red;
+}
+#siz1{
+	border:1px solid black;
+	height:400px;
+	width:auto;
+	background-image:url('image/assasin3.jpg');
+	background-repeat:no-repeat;
+	background-size:auto;
+	background-color:powderblue;
+}
+#siz2{
+	border:1px solid black;
+	height:400px;
+	width:auto;
+	background-image:url('image/assasin3.jpg');
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-color:powderblue;
+}
+#siz3{
+	border:1px solid black;
+	height:400px;
+	width:auto;
+	background-image:url('image/assasin3.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-color:powderblue;
+}
+#siz4{
+	border:1px solid black;
+	height:400px;
+	width:auto;
+	background-image:url('image/assasin3.jpg');
+	background-repeat:no-repeat;
+	background-size:50%;
+	background-color:powderblue;
+}
+#li8 li{
+	padding:10px;
+	margin-bottom:10px;
+	margin-right:10%;
+}
+#li8 li::marker{
+	color:red;
+}
+#pos1{
+	border:1px solid black;
+	height:250px;
+	width:auto;
+	background-image:url('image/assasin4.jpg');
+	background-repeat:no-repeat;
+	background-size:30% 90%;
+	background-position:left top;
+	background-color:powderblue;
+}
+#pos2{
+	border:1px solid black;
+	height:250px;
+	width:auto;
+	background-image:url('image/assasin4.jpg');
+	background-repeat:no-repeat;
+	background-size:30% 90%;
+	background-position:left center;
+	background-color:powderblue;
+}
+#pos3{
+	border:1px solid black;
+	height:250px;
+	width:auto;
+	background-image:url('image/assasin4.jpg');
+	background-repeat:no-repeat;
+	background-size:30% 90%;
+	background-position:left bottom;
+	background-color:powderblue;
+}
+#pos4{
+	border:1px solid black;
+	height:250px;
+	width:auto;
+	background-image:url('image/assasin4.jpg');
+	background-repeat:no-repeat;
+	background-size:30% 90%;
+	background-position:right top;
+	background-color:powderblue;
+}
+#pos5{
+	border:1px solid black;
+	height:250px;
+	width:auto;
+	background-image:url('image/assasin4.jpg');
+	background-repeat:no-repeat;
+	background-size:30% 90%;
+	background-position:right center;
+	background-color:powderblue;
+}
+#pos6{
+	border:1px solid black;
+	height:250px;
+	width:auto;
+	background-image:url('image/assasin4.jpg');
+	background-repeat:no-repeat;
+	background-size:30% 90%;
+	background-position:right bottom;
+	background-color:powderblue;
+}
+#pos7{
+	border:1px solid black;
+	height:250px;
+	width:auto;
+	background-image:url('image/assasin4.jpg');
+	background-repeat:no-repeat;
+	background-size:30% 90%;
+	background-position:center top;
+	background-color:powderblue;
+}
+#pos8{
+	border:1px solid black;
+	height:250px;
+	width:auto;
+	background-image:url('image/assasin4.jpg');
+	background-repeat:no-repeat;
+	background-size:30% 90%;
+	background-position:center center;
+	background-color:powderblue;
+}
+#pos9{
+	border:1px solid black;
+	height:250px;
+	width:auto;
+	background-image:url('image/assasin4.jpg');
+	background-repeat:no-repeat;
+	background-size:30% 90%;
+	background-position:center bottom;
+	background-color:powderblue;
+}
+
+#li9 li{
+	padding:10px;
+	margin-bottom:10px;
+	margin-right:10%;
+}
+#li9 li::marker{
+	color:red;
+}
+#posx1{
+	border:1px solid black;
+	height:250px;
+	width:auto;
+	background-image:url('image/assasin5.jpg');
+	background-repeat:no-repeat;
+	background-size:30% 90%;
+	background-position-x:left;
+	background-color:powderblue;
+}
+#posx2{
+	border:1px solid black;
+	height:250px;
+	width:auto;
+	background-image:url('image/assasin5.jpg');
+	background-repeat:no-repeat;
+	background-size:30% 90%;
+	background-position-x:center;
+	background-color:powderblue;
+}
+#posx3{
+	border:1px solid black;
+	height:250px;
+	width:auto;
+	background-image:url('image/assasin5.jpg');
+	background-repeat:no-repeat;
+	background-size:30% 90%;
+	background-position-x:right;
+	background-color:powderblue;
+}
+#posx4{
+	border:1px solid black;
+	height:250px;
+	width:auto;
+	background-image:url('image/assasin5.jpg');
+	background-repeat:no-repeat;
+	background-size:30% 90%;
+	background-position-x:100px;
+	background-color:powderblue;
+}
+
+#li10 li{
+	padding:10px;
+	margin-bottom:10px;
+	margin-right:10%;
+}
+#li10 li::marker{
+	color:red;
+}
+#posy1{
+	border:1px solid black;
+	height:250px;
+	width:auto;
+	background-image:url('image/assasin6.jpg');
+	background-repeat:no-repeat;
+	background-size:30% 90%;
+	background-position-y:top;
+	background-color:powderblue;
+}
+#posy2{
+	border:1px solid black;
+	height:250px;
+	width:auto;
+	background-image:url('image/assasin6.jpg');
+	background-repeat:no-repeat;
+	background-size:30% 90%;
+	background-position-y:bottom;
+	background-color:powderblue;
+}
+#posy3{
+	border:1px solid black;
+	height:250px;
+	width:auto;
+	background-image:url('image/assasin6.jpg');
+	background-repeat:no-repeat;
+	background-size:30% 90%;
+	background-position-y:center;
+	background-color:powderblue;
+}
+#posy4{
+	border:1px solid black;
+	height:250px;
+	width:auto;
+	background-image:url('image/assasin6.jpg');
+	background-repeat:no-repeat;
+	background-size:30% 90%;
+	background-position-y:100px;
+	background-color:powderblue;
+}
+#li11 li{
+	padding:10px;
+	margin-bottom:10px;
+	margin-right:10%;
+	border:1px solid black;
+	height:100px;
+	width:auto;
+	background-color:powderblue;
+}
+#li11 li::marker{
+	color:red;
+}
+#a1 a{
+	border:1px solid red;
+	background-color:none;
+	border-radius:20px;
+	color;white;
+	margin-left:45%;
+	margin-top:5%;
+	display:inline-block;
+	width:8%; 
+}
+#a1 a:hover{
+	border-color:green;
+	background-color:lightgreen;
+	color:white;
+	display:inline-block;
+}
+</style>
+<head>
+<body>
+	<div class="container">
+	<!-- css background types-->
+	<section class="sec1">
+		<h1>Types of css background</h1>
+		<ol id="li1">
+			<li>background-color</li>
+			<li>background-image</li>
+			<li>background-origin</li>
+			<li>background-repeat</li>
+			<li>background-attachment</li>
+			<li>background-size</li>
+			<li>background-position</li>
+			<li>background-position-x</li>
+			<li>background-position-y</li>
+			<li>background(shorthand property)</li>
+		</ol>
+	</section>
+	<div id="a1">
+		<a href="index.html">click to go back</a>
+	</div>
+	<hr style="border-color:red;margin-top:1%;"> 
+	<section class="sec2">
+		<h1>Types of css color</h1>
+		<ol id="li2">
+			<li style="border:1px solid black;background-color:powderblue;"><mark style="color:red">color name</mark>
+				<p>background-color with color name</p></li>
+			<li style="border:1px solid black;background-color:powderblue;"><mark style="color:red">HEX value</mark>
+				<p>background-color with color code</p></li>
+			<li style="border:1px solid black;background-color:rgb(13,255,237);"><mark style="color:red">RGB value</mark>
+				<p>background-color with color name</p></li>
+		</ol>
+	</section>
+	<hr style="border-color:red;margin-top:1%;"> 
+		<h1>Background image</h1>
+		<marquee dir="right" scrollamount=10 style="border:1px solid black;background-color:powderblue;height:50%;width:90%;">
+		<ol id="li3">
+			<li id="back1"><mark style="color:red">background-image:url('');</mark></li>
+			<li id="back2"><mark style="color:red">background-image:none;</mark></li>
+			<li id="back3"><mark style="color:red">background-image:conic-gradient();</mark></li>
+			<li id="back4"><mark style="color:red">background-image:linear-gradient();</mark></li>
+			<li id="back5"><mark style="color:red">background-image:radial-gradient();</mark></li>
+			<li id="back6"><mark style="color:red">background-image:repeating-conic-gradient();</mark></li>
+			<li id="back7"><mark style="color:red">background-image:repeating-linear-gradient();</mark></li>
+			<li id="back8"><mark style="color:red">background-image:repeating-radial-gradient();</mark></li>
+		</ol>
+		</marquee>
+	<hr style="border-color:red;margin-top:1%;"> 
+		<h1>Background origin</h1>
+		<ol id="li4">
+			<li id="org1"><mark style="color:red">background-origin:padding-box;</mark>
+				<p>Default value. The background image starts from the upper left corner of the padding edge</p></li>
+			<li id="org2"><mark style="color:red">background-image:border-box;</mark>
+				<p>The background image starts from the upper left corner of the border</p></li>
+			<li id="org3"><mark style="color:red">background-image:content-box</mark>
+				<p>The background image starts from the upper left corner of the content</p></li>
+		</ol>
+	<hr style="border-color:red;margin-top:1%;"> 
+		<h1>Background repeat</h1>
+		<ol id="li5">
+			<li id="rep1"><mark style="color:red">background-repeat:repeat;</mark></li>
+			<li id="rep2"><mark style="color:red">background-repeat:no-repeat;</mark></li>
+			<li id="rep3"><mark style="color:red">background-repeat:repeat-x;</mark></li>
+			<li id="rep4"><mark style="color:red">background-repeat:repeat-y;</mark></li>
+			<li id="rep5"><mark style="color:red">background-repeat:space;</mark></li>
+			<li id="rep6"><mark style="color:red">background-repeat:round;</mark></li>
+		</ol>
+	<hr style="border-color:red;margin-top:1%;"> 
+		<h1>Background attachment</h1>
+		<ol id="li6">
+			<li id="att1"><mark style="color:red">background-attachment:scroll;</mark><br>
+				<a href="scroll.html" target="_self">click to view Background scroll page</a></li>
+			<li id="att2"><mark style="color:red">background-attachment:fixed;</mark><br>
+				<a href="fixed.html" target="_self">click to view Background fixed page</a></li>
+			<li id="att3"><mark style="color:red">background-attachment:local;</mark><br>
+				<a href="local.html" target="_self">click to view Background local page</a></li>
+		</ol>
+	<hr style="border-color:red;margin-top:1%;"> 
+		<h1>Background size</h1>
+		<ol id="li7">
+			<li id="siz1"><mark style="color:red">background-size:auto;</mark></li>
+			<li id="siz2"><mark style="color:red">background-size:contain;</mark></li>
+			<li id="siz3"><mark style="color:red">background-size:cover;</mark></li>
+			<li id="siz3"><mark style="color:red">background-size:50%;</mark></li>
+		</ol>
+	<hr style="border-color:red;margin-top:1%;"> 
+		<h1>Background position</h1>
+		<ol id="li8">
+			<li id="pos1"><mark style="color:red">background-position:left top;</mark></li>
+			<li id="pos2"><mark style="color:red">background-position:left center;</mark></li>
+			<li id="pos3"><mark style="color:red">background-position:left bottom;</mark></li>
+			<li id="pos4"><mark style="color:red">background-position:right top;</mark></li>
+			<li id="pos5"><mark style="color:red">background-position:right center;</mark></li>
+			<li id="pos6"><mark style="color:red">background-position:right bottom;</mark></li>
+			<li id="pos7"><mark style="color:red">background-position:center top;</mark></li>
+			<li id="pos8"><mark style="color:red">background-position:center center;</mark></li>
+			<li id="pos9"><mark style="color:red">background-position:center bottom;</mark></li>
+		</ol>
+	<hr style="border-color:red;margin-top:1%;"> 
+		<h1>Background-position-x</h1>
+		<ol id="li9">
+			<li id="posx1"><mark style="color:red">background-position-x:left;</mark></li>
+			<li id="posx2"><mark style="color:red">background-position-x:center;</mark></li>
+			<li id="posx3"><mark style="color:red">background-position-x:right;</mark></li>
+			<li id="posx4"><mark style="color:red">background-position-x:100px;</mark></li>
+		</ol>
+	<hr style="border-color:red;margin-top:1%;"> 
+		<h1>Background-position-y</h1>
+		<ol id="li10">
+			<li id="posy1"><mark style="color:red">background-position-y:top;</mark></li>
+			<li id="posy2"><mark style="color:red">background-position-y:bottom;</mark></li>
+			<li id="posy3"><mark style="color:red">background-position-y:center;</mark></li>
+			<li id="posy4"><mark style="color:red">background-position-y:100px;</mark></li>
+		</ol>
+		<hr style="border-color:red;margin-top:1%;"> 
+		<h1>Background shorthand property</h1>
+		<ol id="li11">
+			<li id="short"><mark style="color:red">background-shorthand property</mark><br>
+				<a href="shorthand.html" target="_self">click to view Background shorthand property</a></li>
+		</ol>
+</div>
+</body>
+</html>

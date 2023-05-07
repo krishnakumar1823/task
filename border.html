@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>css borders</title>
+<style>
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+.container{
+	width:90%;
+	margin:auto;
+}
+h1{
+	margin-left:40%;
+	color:red;
+}
+#tps{
+	margin-left:45%;
+}
+#tps li::marker{
+	color:red;
+}
+#marq{
+	display:flex;
+}
+#marq li{
+	margin-right:10%;
+}
+#a1 a{
+	border:1px solid red;
+	background-color:none;
+	border-radius:20px;
+	color;white;
+	margin-left:42%;
+	margin-top:1%;
+	margin-bottom:3%;
+	display:inline-block;
+	width:8%; 
+}
+#a1 a:hover{
+	border-color:green;
+	background-color:lightgreen;
+	color:white;
+	display:inline-block;
+}
+</style>
+</head>
+<body>
+	<div class="container">
+	<h1>css borders</h1>
+	<section id="sec1">
+		<ol id="tps">
+			<li>border-style</li>
+			<li>border-width</li>
+			<li>border-color</li>
+			<li>border-sides</li>
+			<li>border-shorthand</li>
+			<li>rounded border</li>
+		</ol>
+	</section>
+	<div id="a1">
+		<a href="index.html">click to go back</a>
+	</div>
+	<hr style="border-color:red:width:auto;border-color:red;">
+	<section>
+	<h1>1.border-style</h1>
+		<ol>
+			<li style="border-style:dotted;border-radius:12px;height:150px;width:auto;margin-bottom:4%;"><mark style="color:red;">border-style:dotted</mark><br><p style="margin-top:2%;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></li>
+			<li style="border-style:dashed;border-radius:12px;height:150px;width:auto;margin-bottom:4%;"><mark style="color:red;">border-style:dashed</mark><br><p style="margin-top:2%;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></li>
+			<li style="border-style:solid;border-radius:12px;height:150px;width:auto;margin-bottom:4%;"><mark style="color:red;">border-style:solid</mark><br><p style="margin-top:2%;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></li>
+			<li style="border-style:double;border-radius:12px;height:150px;width:auto;margin-bottom:4%;"><mark style="color:red;">border-style:double</mark><br><p style="margin-top:2%;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></li>
+			<li style="border-style:groove;border-radius:12px;height:150px;width:auto;margin-bottom:4%;"><mark style="color:red;">border-style:groove</mark><br><p style="margin-top:2%;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></li>
+			<li style="border-style:ridge;border-radius:12px;height:150px;width:auto;margin-bottom:4%;"><mark style="color:red;">border-style:ridge</mark><br><p style="margin-top:2%;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></li>
+			<li style="border-style:inset;border-radius:12px;height:150px;width:auto;margin-bottom:4%;"><mark style="color:red;">border-style:inset</mark><br><p style="margin-top:2%;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></li>
+			<li style="border-style:none;border-radius:12px;height:150px;width:auto;margin-bottom:4%;"><mark style="color:red;">border-style:none</mark><br><p style="margin-top:2%;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></li>
+			<li style="border-style:hidden;border-radius:12px;height:150px;width:auto;margin-bottom:4%;"><mark style="color:red;">border-style:hidden</mark><br><p style="margin-top:2%;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></li>
+			<li style="border-style:outset;border-radius:12px;height:150px;width:auto;margin-bottom:4%;"><mark style="color:red;">border-style:outset</mark><br><p style="margin-top:2%;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></li>
+		</ol>
+	</section>
+	<hr style="border-color:red:width:auto;border-color:red;">
+	<section>
+	<h1>2.border-width</h1>
+		<ol>
+			<li style="border-width:medium;border-style:solid;border-radius:12px;height:150px;width:auto;margin-bottom:4%;"><mark style="color:red;">border-width:medium;</mark><br><p style="margin-top:2%;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></li>
+			<li style="border-width:thick;border-style:solid;border-radius:12px;height:150px;width:auto;margin-bottom:4%;"><mark style="color:red;">border-width:thick;</mark><br><p style="margin-top:2%;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></li>
+			<li style="border-width:2px;border-style:solid;border-radius:12px;height:150px;width:auto;margin-bottom:4%;"><mark style="color:red;">border-width:2px;</mark><br><p style="margin-top:2%;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></li>
+		</ol>
+	</section>
+	<hr style="border-color:red:width:auto;border-color:red;">
+	<section>
+	<h1>3.border color</h1>
+		<ol>
+			<li style="border:5px solid red;border-radius:12px;height:150px;width:auto;margin-bottom:4%;"><mark style="color:red;">border:5px dotted red</mark><br><p style="margin-top:2%;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></li>
+		</ol>
+	</section>
+	<hr style="border-color:red:width:auto;border-color:red;">
+	<section>
+	<h1>4.border-sides</h1>
+		<ol>
+			<li style="border-width:medium;border-style:dotted solid double dashed;border-radius:12px;height:150px;width:auto;margin-bottom:4%;"><mark style="color:red;">border-style:dotted solid double dashed</mark><br><p style="margin-top:2%;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></li>
+			<li style="border-width:thick;border-style:dotted solid double;border-radius:12px;height:150px;width:auto;margin-bottom:4%;"><mark style="color:red;">border-style:dotted solid double</mark><br><p style="margin-top:2%;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></li>
+			<li style="border-width:2px;border-style:dotted solid;border-radius:12px;height:150px;width:auto;margin-bottom:4%;"><mark style="color:red;">border-style:dotted solid</mark><br><p style="margin-top:2%;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></li>
+			<li style="border-width:2px;border-style:dotted;border-radius:12px;height:150px;width:auto;margin-bottom:4%;"><mark style="color:red;">border-style:dotted</mark><br><p style="margin-top:2%;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></li>
+		</ol>
+	</section>
+	<hr style="border-color:red:width:auto;border-color:red;">
+	<section>
+	<h1>5.border shorthand</h1>
+		<ol>
+			<li style="border:2px dotted red;border-radius:12px;height:150px;width:auto;margin-bottom:4%;"><mark style="color:red;">border:2px dotted red</mark><br><p style="margin-top:2%;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></li>
+			<li style="border-top:2px dotted red;border-radius:12px;height:150px;width:auto;margin-bottom:4%;"><mark style="color:red;">border-top:2px dotted red</mark><br><p style="margin-top:2%;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></li>
+			<li style="border-bottom:2px dotted red;border-radius:12px;height:150px;width:auto;margin-bottom:4%;"><mark style="color:red;">border-bottom:2px dotted red</mark><br><p style="margin-top:2%;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></li>
+			<li style="border-left:2px dotted red;border-radius:12px;height:150px;width:auto;margin-bottom:4%;"><mark style="color:red;">border-left:2px dotted red</mark><br><p style="margin-top:2%;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></li>
+			<li style="border-right:2px dotted red;border-radius:12px;height:150px;width:auto;margin-bottom:4%;"><mark style="color:red;">border-right:2px dotted red</mark><br><p style="margin-top:2%;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></li>
+			 
+		</ol>
+	</section>
+	<hr style="border-color:red:width:auto;border-color:red;">
+	<section>
+	<h1>6.rounded border</h1>
+	<marquee dir="right" scrollamount=10>
+		<ol id="marq">
+			<li><mark style="color:red;">border-radius:50%</mark><br>
+			<img src="image/tom.jpg" style="border-radius:50%;" alt="tom and jerry" height="250px" width="250px"></li>
+			<li><mark style="color:red;">border-top-left-radius:50%</mark><br>
+			<img src="image/tom.jpg" style="border-top-left-radius:50%" alt="tom and jerry" height="250px" width="250px"></li>
+			<li><mark style="color:red;">border-top-right-radius:50%</mark><br>
+			<img src="image/tom.jpg" style="border-top-right-radius:50%" alt="tom and jerry" height="250px" width="250px"></li>
+			<li><mark style="color:red;">border-bottom-left-radius:50%</mark><br>
+			<img src="image/tom.jpg" style="border-bottom-left-radius:50%" alt="tom and jerry" height="250px" width="250px"></li>
+			<li><mark style="color:red;">border-bottom-right-radius:50%</mark><br>
+			<img src="image/tom.jpg" style="border-bottom-right-radius:50%" alt="tom and jerry" height="250px" width="250px"></li>
+			<li><mark style="color:red;">border-radius:0 50% 0 50%</mark><br>
+			<img src="image/tom.jpg" style="border-radius:0 50% 0 50%" alt="tom and jerry" height="250px" width="250px"></li>
+			<li><mark style="color:red;">border-radius:0 50% 0 50%</mark><br>
+			<img src="image/tom.jpg" style="border-radius:50% 0 50% 0" alt="tom and jerry" height="250px" width="250px"></li>
+		</ol>
+	</marquee>
+	</section>
+</div>
+</body>
+</html>
